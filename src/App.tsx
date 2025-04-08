@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 import viteLogo from '/vite.svg';
 import reactLogo from '@/assets/react.svg';
+import { Button } from '@/shared/components/ui/button';
 
 export function App() {
   const [count, setCount] = useState(0);
@@ -19,6 +20,9 @@ export function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <h1 className="text-3xl font-bold underline">Hello tailwindcss!</h1>
+      <h1 className="text-1xl font-bold underline">테일윈드 적용 테스트!</h1>
+      <Button>Shadcn/ui</Button>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
